@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">36,765</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">OWyseTest</td><td><a href="#m0">f</a></td><td rowspan="1">1464256605453</td><td rowspan="1">36741</td></tr></tbody></table><h2>Test</h2><h3 id="m0">OWyseTest#f</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.omniwyse.mobiletest.test.functions.AppFunctionStep.execute(AppFunctionStep.java:73)
+	at com.omniwyse.mobiletest.test.cases.TestCaseStep.execute(TestCaseStep.java:52)
+	at com.omniwyse.mobiletest.test.cases.TestCaseStep.executeTestCaseStep(TestCaseStep.java:39)
+	at com.omniwyse.mobiletest.test.cases.TestCaseStep.&lt;init&gt;(TestCaseStep.java:27)
+	at com.omniwyse.mobiletest.test.cases.TestCases.executeTestCase(TestCases.java:42)
+	at com.omniwyse.mobiletest.test.cases.TestCases.&lt;init&gt;(TestCases.java:26)
+	at com.omniwyse.mobiletest.test.suites.TestSuite.&lt;init&gt;(TestSuite.java:37)
+	at com.omniwyse.mobiletest.data.DataManager.executeTestPlan(DataManager.java:66)
+	at OWyseTest.f(OWyseTest.java:26)
+Caused by: javax.mail.AuthenticationFailedException: [ALERT] Invalid credentials (Failure)
+	at com.sun.mail.imap.IMAPStore.protocolConnect(IMAPStore.java:474)
+	at javax.mail.Service.connect(Service.java:275)
+	at javax.mail.Service.connect(Service.java:156)
+	at com.omniwyse.mobiletest.utils.GmailUtility.getEmailStore(GmailUtility.java:55)
+	at com.omniwyse.mobiletest.utils.GmailUtility.getVerificationLinkFromGmail(GmailUtility.java:140)
+	at com.omniwyse.mobiletest.driver.SeleniumFramework.registerAndValidateUser(SeleniumFramework.java:715)
+	... 37 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
